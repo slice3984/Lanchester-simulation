@@ -12,11 +12,9 @@ public class Lanchester {
 
         // Second population won (H)
         if (l < 0) {
-            System.out.println("BLUE WON");
             return Utils.atanh(((double) startingAmountFirstPopulation / startingAmountSecondPopulation) * Math.sqrt(s/r) ) / Math.sqrt(s * r);
         } else {
             // First population won (G)
-            System.out.println("RED WON");
             return Utils.atanh((((double) startingAmountSecondPopulation / startingAmountFirstPopulation) * Math.sqrt(r/s)) ) / Math.sqrt(s * r);
         }
     }

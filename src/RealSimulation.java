@@ -16,8 +16,8 @@ public class RealSimulation extends SimulationLogic {
         int eliminationsThisFrameBlue = (int) Math.floor(totalEliminationsBlue);
         leftFractionalShotsBlue = totalEliminationsBlue - eliminationsThisFrameBlue;
 
-        populationRed -= eliminationsThisFrameRed;
-        populationBlue -= eliminationsThisFrameBlue;
+        populationRed -= eliminationsThisFrameBlue;
+        populationBlue -=  eliminationsThisFrameRed;
 
         // Take a new snapshot of the clock for the next frame
         clock.takeSnapshot();
